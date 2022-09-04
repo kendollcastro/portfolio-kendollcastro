@@ -1,0 +1,54 @@
+
+.banner-contact {
+  background-image: url(../../img/home-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin-top: 6.75rem;
+  margin-bottom: 6.75rem;
+  max-width: 100%;
+}
+
+.banner-info {
+  align-items: center;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: center;
+  width: 1170px;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.banner-text {
+  font-size: 24px;
+}
+
+.banner-info p {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.banner-info a:hover {
+  background-color: $button-hover-color;
+}
+
+.banner-button a {
+  background-color: $button-color;
+  border-radius: 0.313rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 6.25rem 0 5rem;
+  padding: 0.625rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}

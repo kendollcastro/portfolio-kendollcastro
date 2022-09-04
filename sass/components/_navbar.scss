@@ -1,0 +1,134 @@
+.nav-wrapper {
+  background-color: $primary-color;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  position: sticky;
+  top: 0;
+
+  @media (min-width: 1440px) {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
+
+.nav-bar {
+  align-items: center;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+  }
+}
+
+.nav-menu {
+
+  width: 28.125rem;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 28.125rem;
+  }
+}
+
+.nav-menu li {
+
+  a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $text-color;
+  }
+  a:link {
+    color: $text-color;
+  }
+}
+
+.cool-link::after {
+  background-color: $text-color;
+  content: '';
+  display: block;
+  height: 0.125rem;
+  transition: width .3s;
+  width: 0;
+}
+
+.cool-link:hover::after {
+  transition: width .3s;
+  width: 100%;
+}
+
+.menu-icon{
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.openMenu {
+  margin: 1.25rem;
+  cursor: pointer;
+  @media (min-width: 1440px){
+    display: none;
+  }
+}
+
+.openMenuWrapper {
+  align-items: center;
+  background: $primary-color;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: start;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: top 1s ease;
+  z-index: 10;
+}
+
+.mainMenu {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 11.25rem;
+  justify-content: space-between;
+  list-style: none;
+
+  li a{
+    color: $text-color;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+}
+.open-menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  justify-content: space-between;
+  margin-top: 3.125rem;
+}
+
+.closeMenu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media(min-width: 1440px) {
+  .mainMenu {
+    display: none;
+  }
+}
+

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $primary-color;
+  color: $text-color;
+  box-sizing: border-box;
+}
+
+h1, h3, h4, a{
+  font-family: $font-stack;
+}
+
+h1{
+  font-size: 2.2rem;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    font-size: 4.375rem;
+  }
+}
+
+h3{
+  color: $text-color;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  margin-top: 4.375rem;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    font-size: 2.8rem;
+  }
+}
+
+h4 {
+  font-size: 1.125rem;
+  color: $text-color;
+}
+
+p, label{
+  font-family: $font-secondary;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content__center {
+  margin: 0 auto;
+  margin-bottom: 6.75rem;
+  width: 90%;
+  @media(min-width: 768px) {
+    width: 80%;
+  }
+  @media (min-width: 1440px) {
+    width: 1140px;
+  }
+}
+
+.material-icons {
+  direction: ltr;
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-size: 2.5rem;  /* Preferred icon size */
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.logo img {
+  height: 2.125rem;
+  top: 1.875rem;
+
+  @media (min-width: 1440px) {
+    height: 3.125rem;
+  }
+}

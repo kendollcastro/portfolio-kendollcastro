@@ -1,0 +1,24 @@
+{
+  "name": "kendoll-castro-portfolio",
+  "version": "1.0.0",
+  "description": "This is my package for my portfolio proyect",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o public/css",
+    "sass-build": "node-sass sass -o public/css --output-style compressed",
+    "dev-server": "live-server --watch=\"index.html,sass,js\"",
+    "eslint": "eslint js",
+    "dev": "npm run sass-build && concurrently \"npm run sass\" \"npm run dev-server\" \"esw -w js\""
+  },
+  "author": "kendollcastro",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.3.0",
+    "eslint": "^8.23.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-watch": "^8.0.0",
+    "live-server": "^1.2.2",
+    "livereload": "^0.9.3",
+    "node-sass": "^7.0.1"
+  }
+}
