@@ -17,8 +17,8 @@
     "eslint": "^8.23.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-watch": "^8.0.0",
-    "live-server": "^1.2.2",
+    "live-server": "^1.1.0",
     "livereload": "^0.9.3",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.3"
   }
 }
